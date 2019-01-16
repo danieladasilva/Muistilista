@@ -1,12 +1,8 @@
 # Muistilista
 
-Nykyihmisillä on niin paljon erilaisia asioita muistettavana. Kuitenkin moniin asioihin keksitty apukeinoja, kuten mm. numeromuistio. Päivän askareihin ei ole kuitenkaan kehitetty laajalti käytössä olevaa ratkaisua. Ossi Opiskelija tarvitsisi itselleen Ossin muistilistan, johon hän voisi listata askareitaan muistiin. Hän haluaisi tapahtumien olevan listassa, joka olisi loogisessa järjestyksessä askareen tärkeyden kanssa. Hänen tulisi pystyä laittamaan erilaisia tärkeysasteita askareille ja luokitella askareita eri ryhmiin.
+Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallintaan. Sovellukseen kirjaudutaan omalla käyttäjätunnuksella ja salasanalla. Sovelluksessa on mahdollista järjestellä omat muistettavat askareet omiin ryhmiinsä (syntymäpäivät, laskut, työasiat, opiskelu jne.). Käyttäjä pystyy itse lisäämään ja poistamaan ryhmiä. Sovellus mahdollistaa myös askareiden/muistilappujen järjestämisen tärkeysasteensa mukaan.
 
-Hövelinä kaverina Ossi tarjoaa palvelunsa myös kavereidensa käyttöön jolloin kullakin kaverilla on oma käyttäjätunnus ja salasana, joihin liittyvät omat tärkeysasteensa ja luokkansa.
-
-Luokat voivat sisältää aliluokkia tai yhdellä askareella voi olla monta luokkaa. Jommankumman ominaisuuden toteuttaminen tekee arvasanamaksimiksi vitosen, muuten työ on nelonen.
-
-Toimintoja:
+Toimintoja listattuna:
 
   - Kirjautuminen (käyttäjätunnus ja salasana)
   - Askereiden lisääminen, muokkaaminen ja poistaminen
