@@ -15,11 +15,8 @@ Toimintoja listattuna:
     - Luokat voivat olla sisäkkäisiä
     - Yhdellä askareella voi olla monta luokkaa
     
-Linkki Herokuun:
-https://tsoha-muistilista.herokuapp.com/
+[Linkki Herokuun](https://tsoha-muistilista.herokuapp.com/)
 
-Linkki tietokantahahmotelmaan:
-https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md
+[Linkki tietokantahahmotelmaan](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
 
-Linkki käyttötapauksiin:
-https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md
+[Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
