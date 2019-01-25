@@ -17,3 +17,9 @@ Toimintoja listattuna:
     
 Linkki Herokuun:
 https://tsoha-muistilista.herokuapp.com/
+
+Linkki tietokantahahmotelmaan:
+https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md
+
+Linkki käyttötapauksiin:
+https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md
