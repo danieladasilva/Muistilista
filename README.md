@@ -1,5 +1,7 @@
 # Muistilista
 
+Aihekuvaus
+
 Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallintaan. Sovellukseen kirjaudutaan omalla käyttäjätunnuksella ja salasanalla. Sovelluksessa on mahdollista järjestellä omat muistettavat askareet omiin ryhmiinsä (syntymäpäivät, laskut, työasiat, opiskelu jne.). Käyttäjä pystyy itse lisäämään ja poistamaan ryhmiä. Sovellus mahdollistaa myös askareiden/muistilappujen järjestämisen tärkeysasteensa mukaan.
 
 Toimintoja listattuna:
@@ -12,3 +14,6 @@ Toimintoja listattuna:
     - luokkien lisääminen ja poistaminen
     - Luokat voivat olla sisäkkäisiä
     - Yhdellä askareella voi olla monta luokkaa
+    
+Linkki Herokuun:
+https://tsoha-muistilista.herokuapp.com/
