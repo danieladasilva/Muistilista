@@ -29,9 +29,9 @@ class User(Base):
 
     @staticmethod
     def find_users_with_undone_tasks():
-        stmt = text("SELECT Account.id, Account.name FROM Account"
-                     " LEFT JOIN Task ON Task.account_id = Account.id"
-                     " WHERE (Task.done = 0)")
+        stmt = text("SELECT Account.id, Account.name FROM Account
+                      LEFT JOIN Task ON Task.account_id = Account.id
+                      WHERE (Task.done = FALSE)")
         res = db.engine.execute(stmt)
 
         response = []
