@@ -3,8 +3,8 @@
 {% block body %}
   <table>
     <tr>
-      <th>Task</th>
-      <th>Done</th>
+      <th>Tehtävä</th>
+      <th>Tehty</th>
       <th></th>
     </tr>
     {% for task in tasks %}
@@ -16,7 +16,13 @@
 	  <input type="submit" value="Merkitse tehdyksi"/>
 	</form>
       </td>
+      <td>
+	<form method="POST" action="{{ url_for('tasks_delete', task_id=task.id) }}">
+	  <input type="submit" value="Poista"/>
+	</form>
+      </td>
     </tr>
     {% endfor %}
   </table>
+  <a class="nav-link" href="{{ url_for('tasks_form') }} ">Lisää tehtävä</a>
 {% endblock %}

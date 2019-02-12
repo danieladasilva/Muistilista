@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+{% if undone_tasks is defined %}
+<p>
+  Lista käyttäjistä, joilla on tekemättömiä tehtäviä:
+</p>
+
+<ul>
+  {% for user in undone_tasks %}
+  <li>
+     {{user.name}}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

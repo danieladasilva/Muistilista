@@ -2,35 +2,7 @@
 
 {% block body %}
 
-{% if undone_tasks is defined %}
-<p>
-  Lista käyttäjistä, joilla on tekemättömiä tehtäviä:
-</p>
-
-<ul>
-  {% for user in undone_tasks %}
-  <li>
-     {{user.name}}
-  </li>
-  {% endfor %}
-</ul>
-
-{% endif %}
-
-
-<!-- {% if needs_tasks is defined %}
-<p>
-  Lista käyttäjistä, joille ei ole annettu yhtäkään tehtävää:
-</p>
-
-<ul>
-  {% for user in needs_tasks %}
-  <li>
-    {{user.id}} {{user.name}}
-  </li>
-  {% endfor %}
-</ul>
-
-{% endif %} -->
+  <h4> Kotisivu </h4>
+  <p> Olet nyt kotisivulla. </p>
 
 {% endblock %}

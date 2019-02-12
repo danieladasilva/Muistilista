@@ -27,9 +27,12 @@ class User(Base):
     def is_authenticated(self):
         return True
 
+    def roles(self):
+        return ["ADMIN"]
+
     @staticmethod
     def find_users_with_undone_tasks():
-        stmt = text("SELECT Account.id, Account.name FROM Account"
+        stmt = text("SELECT DISTINCT Account.id, Account.name FROM Account"
                      " LEFT JOIN Task ON Task.account_id = Account.id"
                      " WHERE (Task.done = FALSE)")
         res = db.engine.execute(stmt)
