@@ -36,7 +36,7 @@ class User(Base):
     def find_users_with_undone_tasks():
         stmt = text("SELECT DISTINCT Account.id, Account.name FROM Account"
                      " LEFT JOIN Task ON Task.account_id = Account.id"
-                     " WHERE (Task.done = FALSE)")
+                     " WHERE (Task.done = :false)").params(false = False)
         res = db.engine.execute(stmt)
 
         response = []
