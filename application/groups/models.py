@@ -2,12 +2,14 @@ from application import db
 from application.models import Base
 
 class Group(Base):
+    #tietokantataulun nimi
+    #__tablename__ = "group"
 
+    #tietokantataulun sarakkeet
     name = db.Column(db.String(144), nullable=False)
 
-
-    task_id = db.Column(db.Integer, db.ForeignKey('task.id'),
-                           nullable=True)
+    #Task-taulussa viittaus Group-tauluun
+    tasks = db.relationship("Task", backref='group', lazy=True)
 
     def __init__(self, name):
         self.name = name

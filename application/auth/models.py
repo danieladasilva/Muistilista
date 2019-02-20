@@ -1,21 +1,24 @@
-from application import db
+from application import db, bcrypt
 from application.models import Base
 from sqlalchemy.sql import text
 
+#Account-tietokantataulu
 class User(Base):
-
+    #tietokantataulun nimi
     __tablename__ = "account"
 
+    #tietokantataulun sarakkeet
     name = db.Column(db.String(144), nullable=False)
     username = db.Column(db.String(144), nullable=False)
     password = db.Column(db.String(144), nullable=False)
 
+    #Task-taulussa viittaus Account-tauluun
     tasks = db.relationship("Task", backref='account', lazy=True)
 
     def __init__(self, name, password):
         self.name = name
         self.username = name
-        self.password = password
+        self.password = bcrypt.generate_password_hash(password, 15).decode('utf-8')
 
     def get_id(self):
         return self.id
@@ -31,6 +34,9 @@ class User(Base):
 
     def roles(self):
         return ["ADMIN"]
+
+    def is_correct_password(self, password):
+        return bcrypt.check_password_hash(self.password, password)
 
     @staticmethod
     def find_users_with_undone_tasks():

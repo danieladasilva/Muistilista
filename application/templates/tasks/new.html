@@ -5,7 +5,7 @@
     <table>
       <tr>
 	<td>
-	  {{ form.name.label }}
+	  <h6> Tehtävä: </h6>
 	</td>
 	<td>
 	  {{ form.name }}
@@ -20,17 +20,23 @@
       </tr>
       <tr>
 	<td>
-	  {{ form.done.label }}
+	  <h6> Merkitse tehdyksi: </h6>
 	</td>
 	<td>
 	  {{ form.done }}
 	</td>
-	<td>
-	</td>
       </tr>
       <tr>
+  <td>
+    <h6> Ryhmä: </h6>
+  </td>
+  <td>
+    {{ form.groups }}
+  </td>
+</tr>
+      <tr>
 	<td colspan="3">
-	  <input type="submit" value="Add a new task"/>
+	  <input type="submit" value="Lisää uusi tehtävä"/>
 	</td>
       </tr>
   </form>
