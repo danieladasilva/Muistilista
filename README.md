@@ -6,14 +6,14 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 
 ## Toiminnot
 
-  - Kirjautuminen (käyttäjätunnus ja salasana)
-  - Askereiden lisääminen, muokkaaminen ja poistaminen
-  - Askareiden tärkeysasteen lisääminen, muokkaaminen ja poistaminen
-  - Askareiden luokitteleminen:
-    - esim. laskut, opiskeluun liittyvät, työhön liittyvät, harrastukset tai syntymäpäivät
-    - luokkien lisääminen ja poistaminen
-    - Luokat voivat olla sisäkkäisiä
-    - Yhdellä askareella voi olla monta luokkaa
+  - Rekisteröityminen käyttäjäksi omalla uniikilla käyttäjätunnuksella ja salasanalla (toteutettu (paitsi uuniikkius))
+  - Kirjautuminen sisään sovellukseen/ulos sovelluksesta (toteutettu)
+  - Tehtävien lisääminen, listaaminen, muokkaaminen ja poistaminen (muokkaaminen puuttuu vielä)
+  	- Käyttäjä pystyy nimeämään tehtävän, merkitsemään tehtävän tehdyksi sekä luokittelemaan tehtävän haluamaansa ryhmään (toteutettu)
+  - Ryhmien lisääminen ja poistaminen (poistaminen puuttuu vielä)
+  	- Käyttäjä pystyy lisäämään ja poistamaan ryhmiä.
+  - SOvellus näyttää käyttäjälle tilastotietoa
+  	- Käyttäjä pystyy listaamaan kaikki tekemättömät tehtävänsä
     
 	
 ## Linkkejä
