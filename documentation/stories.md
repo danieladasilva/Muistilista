@@ -2,8 +2,8 @@
 
 ## Käyttäjä
 
-Käyttäjänä haluan, että..
+- Käyttäjänä haluan, että..
 
 ## Ylläpitäjä
 
-Ylläpitäjänä haluan, että..
+- Ylläpitäjänä haluan, että..
