@@ -1,9 +1,14 @@
 # Käyttötapaukset
 
-## Käyttäjä
+## Käyttäjänä haluan, että...
 
-- Käyttäjänä haluan, että..
+- Käyttäjänä haluan, että pystyn rekisteröitymään sovellukseen valitsemallani käyttäjätunnuksella ja salasanalla. Haluan, että käyttätunnukseni on uniikki.
 
-## Ylläpitäjä
+- Käyttäjänä haluan, että pystyn kirjautumaan sisään sovellukseen ja ulos sovelluksesta. OK
+
+- Kirjautuneena käyttäjänä haluan, että luomani ryhmät ja tehtävät näkyvät ainoastaan minulle.
+
+
+## Ylläpitäjänä haluan, että..
 
 - Ylläpitäjänä haluan, että..
