@@ -1,10 +1,10 @@
 # Muistilista
 
-Aihekuvaus
+## Sovelluksen kuvaus
 
 Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallintaan. Sovellukseen kirjaudutaan omalla käyttäjätunnuksella ja salasanalla. Sovelluksessa on mahdollista järjestellä omat muistettavat askareet omiin ryhmiinsä (syntymäpäivät, laskut, työasiat, opiskelu jne.). Käyttäjä pystyy itse lisäämään ja poistamaan ryhmiä. Sovellus mahdollistaa myös askareiden/muistilappujen järjestämisen tärkeysasteensa mukaan.
 
-Toimintoja listattuna:
+## Toiminnot
 
   - Kirjautuminen (käyttäjätunnus ja salasana)
   - Askereiden lisääminen, muokkaaminen ja poistaminen
@@ -15,8 +15,26 @@ Toimintoja listattuna:
     - Luokat voivat olla sisäkkäisiä
     - Yhdellä askareella voi olla monta luokkaa
     
-[Linkki Herokuun](https://tsoha-muistilista.herokuapp.com/)
+	
+## Linkkejä
 
-[Linkki tietokantahahmotelmaan](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
+<dl>
+	<dt>HEROKU</dt>
+</dl>
 
-[Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
+#### [Linkki herokuun](https://tsoha-muistilista.herokuapp.com/)
+	Testitunnukset: 
+		Käyttäjänimi: mikko
+		Salasana: mallikas
+
+<dl>
+	<dt>Tietokanta</dt>
+</dl>
+
+#### [Linkki tietokantahahmotelmaan](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
+
+<dl>
+	<dt>Käyttötapaukset</dt>
+</dl>
+
+#### [Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
