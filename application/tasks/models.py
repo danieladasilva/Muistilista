@@ -13,7 +13,7 @@ class Task(Base):
                            nullable=False)
     #FOREIGN KEY
     #Task-taulussa viittaus Account-tauluun
-    group_id = db.Column(db.Integer, db.ForeignKey('group.id'),
+    # group_id = db.Column(db.Integer, db.ForeignKey('group.id'),
                            nullable=False)
 
     def __init__(self, name):
