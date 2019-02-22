@@ -24,8 +24,8 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 
 #### [Linkki herokuun](https://tsoha-muistilista.herokuapp.com/)
 	Testitunnukset: 
-		Käyttäjänimi: mikko
-		Salasana: mallikas
+		käyttäjänimi: mikko
+		salasana: mallikas
 
 <dl>
 	<dt>Tietokanta</dt>
