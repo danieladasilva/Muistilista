@@ -18,7 +18,7 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 	
 ## Linkkejä
 
-**HEROKU**
+#### **HEROKU**
 
 
 #### [Linkki herokuun](https://tsoha-muistilista.herokuapp.com/)
@@ -27,13 +27,13 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 		salasana: mallikas
 
 
-**Tietokanta**
+#### **TIETOKANTA**
 
 
 #### [Linkki tietokantahahmotelmaan](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
 
 
-**Käyttötapaukset**
+#### **KÄYTTÖTAPAUKSET**
 
 
 #### [Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
