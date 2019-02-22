@@ -37,4 +37,4 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 #### [Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
 
 
-## Käyttöohjeet
+## Käyttö- ja asennusohjeet
