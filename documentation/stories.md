@@ -1,6 +1,9 @@
-käyttötapaukset
+# Käyttötapaukset
 
-- arkikäyttöön soveltuva sovellus
-- helpot toiminnot, joita jokainen osaa käyttää
-- askareiden teemoittaminen
-- selkeä käyttöliittymä
+## Käyttäjä
+
+Käyttäjänä haluan, että..
+
+## Ylläpitäjä
+
+Ylläpitäjänä haluan, että..
