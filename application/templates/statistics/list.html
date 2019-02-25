@@ -42,7 +42,7 @@
       	        </form>
             </td>
             <td>
-      	       <form method="POST" action="{{ url_for('tasks_delete', task_id=task.id) }}">
+      	       <form method="POST" action="{{ url_for('tasks_delete_statistics', task_id=task.id) }}">
                  <input type="submit" class="btn btn-default" value="Poista tehtävä">
       	        </form>
             </td>
@@ -72,11 +72,11 @@
             <td>{{ task.group_id }}</td>
             <td>
       	       <form method="POST" action="{{ url_for('tasks_set_done_statistics', task_id=task.id) }}">
-                 <input type="submit" class="btn btn-default" value="Merkitse tehdyksi">
+                 <input type="submit" class="btn btn-default" value="Merkitse tekemättömäksti">
       	        </form>
             </td>
             <td>
-      	       <form method="POST" action="{{ url_for('tasks_delete', task_id=task.id) }}">
+      	       <form method="POST" action="{{ url_for('tasks_delete_statistics', task_id=task.id) }}">
                  <input type="submit" class="btn btn-default" value="Poista tehtävä">
       	        </form>
             </td>

@@ -14,6 +14,7 @@ def tasks_index():
 def tasks_form():
     return render_template("tasks/new.html", form = TaskForm())
 
+#Tehtävien poistaminen Tehtävät-sivulla
 @app.route("/tasks/delete/<task_id>/", methods=["POST"])
 @login_required(role="ADMIN")
 def tasks_delete(task_id):
@@ -27,6 +28,21 @@ def tasks_delete(task_id):
 
     return redirect(url_for("tasks_index"))
 
+#Tehtävien poistaminen Omat tiedot -sivulla
+@app.route("/tasks/delete/statistics/<task_id>/", methods=["POST"])
+@login_required(role="ADMIN")
+def tasks_delete_statistics(task_id):
+
+    t = Task.query.get(task_id)
+    if t.account_id != current_user.id:
+        return login_manager.unauthorized()
+
+    db.session().delete(t)
+    db.session().commit()
+
+    return redirect(url_for("statistics_index"))
+
+#Tehtävien merkitseminen tehdyiksi Tehtävät-sivulla
 @app.route("/tasks/<task_id>/", methods=["POST"])
 @login_required(role="ADMIN")
 def tasks_set_done(task_id):
@@ -40,7 +56,8 @@ def tasks_set_done(task_id):
 
     return redirect(url_for("tasks_index"))
 
-@app.route("/tasks/<task_id>/", methods=["POST"])
+#Tehtävien merkitseminen tehdyiksi Omat tiedot-sivulla
+@app.route("/tasks/statistics/<task_id>/", methods=["POST"])
 @login_required(role="ADMIN")
 def tasks_set_done_statistics(task_id):
 
