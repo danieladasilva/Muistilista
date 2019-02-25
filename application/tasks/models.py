@@ -1,5 +1,7 @@
 from application import db
 from application.models import Base
+from flask_login import current_user
+from sqlalchemy.sql import text
 
 
 class Task(Base):
@@ -19,3 +21,29 @@ class Task(Base):
     def __init__(self, name):
         self.name = name
         self.done = False
+
+    @staticmethod
+    def find_undone_tasks():
+        stmt = text("SELECT DISTINCT Task.name FROM Task"
+                     " LEFT JOIN Account ON Account.id = Task.account_id"
+                     " WHERE (Task.done = :false) AND (Task.account_id = :currentid)").params(false = False, currentid=current_user.id)
+        res = db.engine.execute(stmt)
+
+        response = []
+        for row in res:
+            response.append({"name":row[0]})
+
+        return response
+
+    @staticmethod
+    def find_done_tasks():
+        stmt = text("SELECT DISTINCT Task.name FROM Task"
+                    " LEFT JOIN Account ON Account.id = Task.account_id"
+                    " WHERE (Task.done = :true) AND (Task.account_id = :currentid)").params(true = True, currentid=current_user.id)
+        res = db.engine.execute(stmt)
+
+        response = []
+        for row in res:
+            response.append({"name":row[0]})
+
+        return response

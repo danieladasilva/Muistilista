@@ -1,15 +1,32 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <table>
+
+<br>
+  <h4> Muistilistan kaikki ryhmät </h4>
+<br>
+
+<table class="table table-sm">
+  <thead>
     <tr>
-      <th>Ryhmät</th>
+      <th scope="col">Ryhmät</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
+  </thead>
+
+  <tbody>
     {% for group in groups %}
     <tr>
       <td>{{ group.name }}</td>
     </tr>
     {% endfor %}
-  </table>
-  <a class="nav-link" href="{{ url_for('groups_form') }} ">Lisää ryhmä</a>
+  </tbody>
+</table>
+
+<br>
+  <h4> Uuden ryhmän lisääminen </h4>
+<br>
+
+<a class="nav-link" href="{{ url_for('groups_form') }} ">Lisää ryhmä</a>
 {% endblock %}

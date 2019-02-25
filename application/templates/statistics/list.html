@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-
 {% block body %}
 
 {% if undone_tasks is defined %}
@@ -16,5 +15,77 @@
 </ul>
 
 {% endif %}
+
+<br>
+<h4>Omat tehtävät</h4>
+<br>
+
+<h5>Tekemättömät</h5>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Tehtävä</th>
+            <th scope="col">Ryhmä</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for task in users_undone_tasks %}
+        <tr>
+            <td>{{ task.name }}</td>
+            <td>{{ task.group_id }}</td>
+            <td>
+      	       <form method="POST" action="{{ url_for('tasks_set_done', task_id=task.id) }}">
+                 <input type="submit" class="btn btn-default" value="Merkitse tehdyksi">
+      	        </form>
+            </td>
+            <td>
+      	       <form method="POST" action="{{ url_for('tasks_delete', task_id=task.id) }}">
+                 <input type="submit" class="btn btn-default" value="Poista tehtävä">
+      	        </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table><br>
+
+
+
+<h5>Tehdyt</h5>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Tehtävä</th>
+            <th scope="col">Ryhmä</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for task in users_done_tasks %}
+        <tr>
+            <td>{{ task.name }}</td>
+            <td>{{ task.group_id }}</td>
+            <td>
+      	       <form method="POST" action="{{ url_for('tasks_set_done', task_id=task.id) }}">
+                 <input type="submit" class="btn btn-default" value="Merkitse tehdyksi">
+      	        </form>
+            </td>
+            <td>
+      	       <form method="POST" action="{{ url_for('tasks_delete', task_id=task.id) }}">
+                 <input type="submit" class="btn btn-default" value="Poista tehtävä">
+      	        </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+<br><br><br><br><br><br><br>
 
 {% endblock %}
