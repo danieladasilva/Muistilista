@@ -3,6 +3,9 @@ from application.models import Base
 
 class Group(Base):
     #tietokantataulun sarakkeet
+
+    __tablename__ = "group"
+    
     name = db.Column(db.String(144), nullable=False)
 
     #Task-taulussa viittaus Group-tauluun
