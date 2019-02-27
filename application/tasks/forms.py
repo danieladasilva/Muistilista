@@ -4,7 +4,7 @@ from wtforms import BooleanField, StringField, validators, SelectField
 from application.groups.models import Group
 
 class TaskForm(FlaskForm):
-    name = StringField("Task name", [validators.Length(min=1, max=20)])
+    name = StringField("Task name", [validators.Length(min=2, max=20)])
     done = BooleanField("Done")
 
     groups_query = Group.query.all()

@@ -37,13 +37,13 @@ class Task(Base):
 
     @staticmethod
     def find_done_tasks():
-        stmt = text("SELECT DISTINCT Task.name FROM Task"
+        stmt = text("SELECT DISTINCT Task.name, Task.group_id, Task.id FROM Task"
                     " LEFT JOIN Account ON Account.id = Task.account_id"
                     " WHERE (Task.done = :true) AND (Task.account_id = :currentid)").params(true = True, currentid=current_user.id)
         res = db.engine.execute(stmt)
 
         response = []
         for row in res:
-            response.append({"name":row[0]})
+            response.append({"name":row[0], "group_id":row[1], "id":row[2]})
 
         return response

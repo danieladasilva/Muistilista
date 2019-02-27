@@ -2,28 +2,41 @@
 
 {% block body %}
 {{ error }}
-<form method="POST" action="{{ url_for('auth_login') }}">
-  <table>
-    <tr>
-      <td>
-	{{ form.username.label }}
-      </td>
-      <td>
-	{{ form.username }}
-      </td>
-    </tr>
-    <tr>
-      <td>
-	{{ form.password.label }}
-      </td>
-      <td>
-	{{ form.password }}
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-	<input type="submit" value="Login"/>
-      </td>
-    </tr>
+
+
+<h3>Kirjaudu sisään</h3><br>
+<form class="needs-validation" method="POST" action= "{{ url_for('auth_login') }}" novalidate>
+
+  <div class="form-group col-sm-5">
+    <label for="validationCustom01">Käyttäjänimi</label>
+    <input type="text" class="form-control" name="username" id="validationCustom01" placeholder="Käyttäjänimi" required>
+    <div class="invalid-feedback">
+      Syötä käyttäjänimi.
+    </div>
+  </div>
+
+  <div class="form-group col-sm-5">
+    <label for="validationCustom02">Salasana</label>
+    <input type="password" class="form-control" name="password" id="validationCustom02" placeholder="Salasana" required>
+    <div class="invalid-feedback">
+      Syötä salasana.
+    </div>
+  </div>
+
+  <div class="form-group col-sm-5">
+    <input type="submit" class="btn btn-default" value="Kirjaudu sisään">
+  </div>
+
+  <div class="form-group col-sm-6">
+
+  </div>
+
+
 </form>
+
+
+
+
+
+
 {% endblock %}

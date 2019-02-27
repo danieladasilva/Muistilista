@@ -2,9 +2,6 @@ from application import db
 from application.models import Base
 
 class Group(Base):
-    #tietokantataulun nimi
-    #__tablename__ = "group"
-
     #tietokantataulun sarakkeet
     name = db.Column(db.String(144), nullable=False)
 

@@ -10,15 +10,15 @@
   <thead>
     <tr>
       <th scope="col">Ryhmät</th>
-      <th scope="col"></th>
-      <th scope="col"></th>
+      <th scope="col">Ryhmän numero</th>
     </tr>
   </thead>
 
   <tbody>
     {% for group in groups %}
     <tr>
-      <td>{{ group.name }}</td>
+      <td class="align-middle">{{ group.name }}</td>
+      <td class="align-middle">{{ group.id }}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -29,4 +29,6 @@
 <br>
 
 <a class="nav-link" href="{{ url_for('groups_form') }} ">Lisää ryhmä</a>
+
+<br><br><br><br><br><br><br>
 {% endblock %}

@@ -19,11 +19,11 @@ def tasks_form():
 @login_required(role="ADMIN")
 def tasks_delete(task_id):
 
-    t = Task.query.get(task_id)
-    if t.account_id != current_user.id:
+    task = Task.query.get(task_id)
+    if task.account_id != current_user.id:
         return login_manager.unauthorized()
 
-    db.session().delete(t)
+    db.session().delete(task)
     db.session().commit()
 
     return redirect(url_for("tasks_index"))
@@ -33,11 +33,11 @@ def tasks_delete(task_id):
 @login_required(role="ADMIN")
 def tasks_delete_statistics(task_id):
 
-    t = Task.query.get(task_id)
-    if t.account_id != current_user.id:
+    task = Task.query.get(task_id)
+    if task.account_id != current_user.id:
         return login_manager.unauthorized()
 
-    db.session().delete(t)
+    db.session().delete(task)
     db.session().commit()
 
     return redirect(url_for("statistics_index"))
@@ -51,7 +51,10 @@ def tasks_set_done(task_id):
     if t.account_id != current_user.id:
         return login_manager.unauthorized()
 
-    t.done = True
+    if t.done == True:
+        t.done = False
+    else:
+        t.done = True
     db.session().commit()
 
     return redirect(url_for("tasks_index"))
@@ -65,7 +68,11 @@ def tasks_set_done_statistics(task_id):
     if t.account_id != current_user.id:
         return login_manager.unauthorized()
 
-    t.done = True
+    if t.done == True:
+        t.done = False
+    else:
+        t.done = True
+
     db.session().commit()
 
     return redirect(url_for("statistics_index"))
