@@ -28,7 +28,7 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 
 #### **TIETOKANTA**
 
-#### [Linkki tietokantahahmotelmaan](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
+#### [Linkki tietokantakaavioon ja CREATE TABLE -lauseisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
 
 
 
@@ -37,4 +37,13 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 #### [Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
 
 
-## Käyttö- ja asennusohjeet
+## Asennusohjeet
+Asenna Python ja sqlite3
+Lataa projektin zip-tiedosto
+Pura paketti
+Luo virtuaaliympäristö komennolla python3 -m venv venv
+Aktivoi sen jälkeen virtuaaliympäristö komennolla source venv/bin/activate
+Päivitä pip komennolla pip install --upgrade pip
+Asenna riippuvuudet komennolla pip install -r requirements.txt
+Käynnistä sovellus komennolla python3 run.py
+Mene selaimella osoitteeseen http://localhost:5000
