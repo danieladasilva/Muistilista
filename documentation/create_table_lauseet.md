@@ -23,3 +23,13 @@ CREATE TABLE task (
         FOREIGN KEY(account_id) REFERENCES account (id),
         FOREIGN KEY(group_id) REFERENCES "group" (id)
 );
+
+CREATE TABLE author (
+        id INTEGER NOT NULL, 
+        date_created DATE, 
+        firstname VARCHAR(30) NOT NULL,
+        lastname VARCHAR(30) NOT NULL,
+        books_count INTEGER NOT NULL,
+        PRIMARY KEY (id),
+        CONSTRAINT _author_name_uc UNIQUE (firstname, lastname)
+);
