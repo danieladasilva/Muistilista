@@ -2,18 +2,19 @@
 
 ## Kuvaus
 
-Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallintaan. Sovellukseen kirjaudutaan omalla käyttäjätunnuksella ja salasanalla. Sovelluksessa on mahdollista järjestellä omat muistettavat askareet omiin ryhmiinsä (syntymäpäivät, laskut, työasiat, opiskelu jne.). Käyttäjä pystyy itse lisäämään ja poistamaan ryhmiä. Sovellus mahdollistaa myös askareiden/muistilappujen järjestämisen tärkeysasteensa mukaan.
+Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallintaan. Sovellukseen pystyy kirjaamaan itselleen omia tehtäviä/muistutuksia. Sovelluksessa on mahdollista järjestellä omat muistettavat askareet omiin ryhmiinsä (syntymäpäivät, laskut, työasiat, opiskelu jne.). Käyttäjä pystyy luokittelemaan tehtävänsä jo olemassa olevaan ryhmään tai lisätä kokonaan uusia ryhmiä. Sovellus pitää kirjaa käyttäjän tehdyistä ja tekemättömistä tehtävistä. Käyttäjä pystyy itse merkitsemään tehtävänsä tehdyksi/tekemättömäksi. Myös tehtävien poistaminen sovelluksesta onnistuu. Jotta sovellukseen voi kirjautua (ja käyttää kaikkia sovelluksen toimintoja), tulee käyttäjän ensin rekisteröityä vapaavalintaisella käyttäjätunnuksella ja salasanalla. 
 
 ## Toiminnot
 
-  - Rekisteröityminen käyttäjäksi omalla uniikilla käyttäjätunnuksella ja salasanalla (uniikki käyttäjätunnus puuttuu)
-  - Kirjautuminen sisään sovellukseen/ulos sovelluksesta (toteutettu)
-  - Tehtävien lisääminen, listaaminen, muokkaaminen ja poistaminen (muokkaaminen puuttuu vielä)
-  	- Käyttäjä pystyy nimeämään tehtävän, merkitsemään tehtävän tehdyksi sekä luokittelemaan tehtävän haluamaansa ryhmään (toteutettu)
-  - Ryhmien lisääminen ja poistaminen (poistaminen puuttuu vielä)
-  	- Käyttäjä pystyy lisäämään ja poistamaan ryhmiä.
+  - Rekisteröityminen käyttäjäksi omalla käyttäjätunnuksella ja salasanalla
+  - Kirjautuminen sisään sovellukseen/ulos sovelluksesta
+  - Tehtävien lisääminen, listaaminen, muokkaaminen ja poistaminen
+  	- Käyttäjä pystyy nimeämään tehtävän, merkitsemään tehtävän tehdyksi sekä luokittelemaan tehtävän haluamaansa ryhmään 
+  - Ryhmien lisääminen
+  	- Käyttäjä pystyy lisäämään uusia ryhmiä
   - Sovellus näyttää käyttäjälle tilastotietoa
-  	- Käyttäjä pystyy listaamaan kaikki tekemättömät tehtävänsä
+  	- Käyttäjä pystyy listaamaan kaikki tekemättömät ja tehdyt tehtävät Oma muistilista -sivullaan
+	- Oma muistilista- sivu kokoaa käyttäjän kaikkia henkilökohtaiset tehtävät samalle sivulle. Tehtävät on jaoteltu tekemättömiin 		ja tehtyihin tehtäviin. Sivulla on myös jokaisen tehtävän kohdalla nähtävissä yhmä, johon tehtävä kuuluu.
     
 	
 ## Linkkejä
@@ -22,8 +23,8 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 
 #### [Linkki herokuun](https://tsoha-muistilista.herokuapp.com/)
 	Testitunnukset: 
-		käyttäjänimi: mikko
-		salasana: mallikas
+		käyttäjänimi: testi
+		salasana: testitesti
 
 
 #### **TIETOKANTA**
