@@ -2,13 +2,16 @@
 
 ## Käyttäjänä haluan, että...
 
-- Käyttäjänä haluan, että pystyn rekisteröitymään sovellukseen valitsemallani käyttäjätunnuksella ja salasanalla. Haluan, että käyttätunnukseni on uniikki.
+- Käyttäjänä haluan, että pystyn rekisteröitymään sovellukseen valitsemallani käyttäjätunnuksella ja salasanalla. 
 
-- Käyttäjänä haluan, että pystyn kirjautumaan sisään sovellukseen ja ulos sovelluksesta. (toteutettu)
+- Käyttäjänä haluan, että pystyn kirjautumaan sisään sovellukseen ja ulos sovelluksesta.
 
-- Kirjautuneena käyttäjänä haluan, että luomani ryhmät ja tehtävät näkyvät ainoastaan minulle.
+- Käyttäjänä haluan, että pystyn tarkastelemaan sovellukseen lisättyjä ryhmiä ja tehtäviä.
 
+- Kirjautuneena käyttäjänä haluan, että pystyn lisäämään sovellukseen uusia ryhmiä ja uusia tehtäviä.
 
-## Ylläpitäjänä haluan, että..
+- Kirjautuneena käyttäjänä haluan, että pystyn näkemään listauksen omista tehtävistäni.
 
-- Ylläpitäjänä haluan, että..
+- Kirjautuneena käyttäjänä haluan, että pystyn asettamaan omat tehtäväni tehdyiksi/tekemättömäksi niin monta kertaa kuin haluan.
+
+- Kirjautuneena käyttäjänä haluan, että pystyn poistamaan luomani tehtävät sovelluksesta.
