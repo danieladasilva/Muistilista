@@ -1,1 +1,4 @@
 
+## Ohjelmaan jääneet puutteellisuudet
+
+## Jatkokehitysideoita
