@@ -1,6 +1,6 @@
 ## Asennusohjeet
 
-1) Asenna python sqlite3, pip ja git
+1) Asenna `python`, `sqlite3`, `pip` ja `git`
 2) Lataa projektin zip-tiedosto
 3) Pura paketti
 4) Luo virtuaaliympäristö komennolla `python3 -m venv venv`
