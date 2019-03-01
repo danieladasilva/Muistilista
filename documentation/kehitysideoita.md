@@ -7,3 +7,7 @@
 
 
 ## Jatkokehitysideoita
+
+1) Sovellusta voisi muokata niin, että jokainen käyttäjä näkee vain omaa dataansa. Jokaisella käyttäjällä tulisi olla omat ryhmät ja omat tehtävät, jotta sovelluksen käyttämisessä olisi mitään ideaa. Oma muistilista -sivulla näkee tällä hetkellä vain omaa dataa. 
+
+2) Tehtävät tulisi voida luokitella jonkinlaiseen tärkeysjärjestyksen/kiireellisyyden mukaan (esim. päivämäärittäin). 
