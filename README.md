@@ -29,7 +29,8 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 
 #### **TIETOKANTA**
 
-#### [Linkki tietokantakaavioon ja CREATE TABLE -lauseisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
+#### [Linkki tietokantakaavioon](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
+#### [Linkki CREATE TABLE -lauseisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/create_table_lauseet.md)
 
 
 #### **KÄYTTÖTAPAUKSET**
