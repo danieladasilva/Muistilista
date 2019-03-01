@@ -14,7 +14,7 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
   	- Käyttäjä pystyy lisäämään uusia ryhmiä
   - Sovellus näyttää käyttäjälle tilastotietoa
   	- Käyttäjä pystyy listaamaan kaikki tekemättömät ja tehdyt tehtävät Oma muistilista -sivullaan
-	- Oma muistilista- sivu kokoaa käyttäjän kaikkia henkilökohtaiset tehtävät samalle sivulle. Tehtävät on jaoteltu tekemättömiin 		ja tehtyihin tehtäviin. Sivulla on myös jokaisen tehtävän kohdalla nähtävissä yhmä, johon tehtävä kuuluu.
+	- Oma muistilista- sivu kokoaa käyttäjän kaikkia henkilökohtaiset tehtävät samalle sivulle. Tehtävät on jaoteltu tekemättömiin 		ja tehtyihin tehtäviin. Sivulla on myös jokaisen tehtävän kohdalla nähtävissä ryhmä, johon tehtävä kuuluu.
     
 	
 ## Linkkejä
