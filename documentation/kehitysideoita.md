@@ -5,6 +5,8 @@
 
 2) Kun käyttäjä yrittää poistaa toisen käyttäjän lisäämää tehtävää, vie sovellus virhesivulle. Sama tilanna tapahtuu, jos yrittää muuttaa toisen käyttäjän tekemää tehtävää tekemättömäksi.
 
+3) Tällä hetkellä sovellukseen pystyy luomaan saman käyttäjätunnuksen kahteen kertaan.
+
 
 ## Jatkokehitysideoita
 
