@@ -27,10 +27,14 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 		salasana: testitesti
 
 
+
+
 #### **TIETOKANTA**
 
 #### [Linkki tietokantakaavioon](https://github.com/danieladasilva/Muistilista/blob/master/documentation/dbschema.md)
 #### [Linkki CREATE TABLE -lauseisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/create_table_lauseet.md)
+
+
 
 
 #### **KÄYTTÖTAPAUKSET**
@@ -38,12 +42,20 @@ Muistilista-sovellus on tarkoitettu päivittäisten askareiden ja menojen hallin
 #### [Linkki käyttötapauksiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/stories.md)
 
 
-#### **Käyttöohjeet**
+
+#### **KÄYTTÖOHJEET**
 
 #### [Linkki käyttöohjeisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/k%C3%A4ytt%C3%B6ohjeet.md)
+
+
+
 
 #### **ASENNUSOHJEET**
 
 #### [Linkki asennusohjeisiin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/asennusohjeet.md)
 
 
+
+#### **JATKOKEHITYSIDEAT SEKÄ OHJELMAAN JÄÄNEET PUUTTEELLISUUDET**
+
+#### [Linkki jatkokehitysideoihin](https://github.com/danieladasilva/Muistilista/blob/master/documentation/kehitysideoita.md)
